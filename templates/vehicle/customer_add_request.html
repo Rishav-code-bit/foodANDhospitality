@@ -41,19 +41,19 @@
 <div>
   <form method="post" style="margin-left:200px;margin-right:200px;">
       {% csrf_token %}
-    <label for="category">Vehicle Category</label>
+    <label for="category">State Category</label>
     {% render_field enquiry.category class="form-control"  %}<br>
 
-    <label for="vehicle_no">Vehicle Number</label>
+    <label for="vehicle_no">State Number</label>
     {% render_field enquiry.vehicle_no class="form-control" placeholder="Vehicle Number" %}
 
-    <label for="vehicle_name">Vehicle Name</label>
+    <label for="vehicle_name">State Name</label>
     {% render_field enquiry.vehicle_name class="form-control" placeholder="Vehicle Name" %}
 
-    <label for="vehicle_brand">Vehicle Brand</label>
+    <label for="vehicle_brand">State Brand</label>
     {% render_field enquiry.vehicle_brand class="form-control" placeholder="Vehicle Brand" %}
 
-    <label for="vehicle_model">Vehicle Model</label>
+    <label for="vehicle_model">State Model</label>
     {% render_field enquiry.vehicle_model class="form-control" placeholder="Vehicle Model" %}
 
     <label for="problem_description">Problem Description</label>

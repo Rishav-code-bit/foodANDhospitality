@@ -43,12 +43,12 @@ class RequestForm(forms.ModelForm):
 
 class AdminRequestForm(forms.Form):
     #to_field_name value will be stored when form is submitted.....__str__ method of customer model will be shown there in html
-    customer=forms.ModelChoiceField(queryset=models.Customer.objects.all(),empty_label="Customer Name",to_field_name='id')
-    mechanic=forms.ModelChoiceField(queryset=models.Mechanic.objects.all(),empty_label="Mechanic Name",to_field_name='id')
+    customer=forms.ModelChoiceField(queryset=models.Customer.objects.all(),empty_label="Informer Name",to_field_name='id')
+    mechanic=forms.ModelChoiceField(queryset=models.Mechanic.objects.all(),empty_label="Volunteer Name",to_field_name='id')
     cost=forms.IntegerField()
 
 class AdminApproveRequestForm(forms.Form):
-    mechanic=forms.ModelChoiceField(queryset=models.Mechanic.objects.all(),empty_label="Mechanic Name",to_field_name='id')
+    mechanic=forms.ModelChoiceField(queryset=models.Mechanic.objects.all(),empty_label="Volunteer Name",to_field_name='id')
     cost=forms.IntegerField()
     stat=(('Pending','Pending'),('Approved','Approved'),('Released','Released'))
     status=forms.ChoiceField( choices=stat)

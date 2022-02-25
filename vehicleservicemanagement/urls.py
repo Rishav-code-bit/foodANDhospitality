@@ -2,8 +2,6 @@ from django.contrib import admin
 from django.urls import path
 from vehicle import views
 from django.contrib.auth.views import LoginView,LogoutView
-from django.views.static import serve
-from django.conf.urls.static import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -93,8 +91,5 @@ urlpatterns = [
 
     path('aboutus', views.aboutus_view),
     path('contactus', views.contactus_view),
-
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     
 ]
