@@ -3,7 +3,7 @@
 ---
 ## SCREENSHOTS
 ### Home Page
-![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/home.png?raw=true)
+![dashboard snap](https://user-images.githubusercontent.com/75771591/157800542-8a1db62c-9d33-460e-ac5a-c007d1ce4dbb.png)
 ### Admin Dashboard Dark theme
 ![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/admin_dark.png?raw=true)
 ### Admin Dashboard Light theme
