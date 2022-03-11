@@ -1,1 +1,0 @@
-web: gunicorn am_hospitable.wsgi
