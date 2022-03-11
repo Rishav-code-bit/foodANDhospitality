@@ -1,1 +1,1 @@
-web: gunicorn vehicleservicemanagement.wsgi
+web: gunicorn am_hospitable.wsgi
