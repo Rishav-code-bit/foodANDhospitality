@@ -1,38 +1,38 @@
-# foodANDhospitality# VEHICLE SERVICE MANAGEMENT
+# foodANDhospitality
 ![developer](https://img.shields.io/badge/Developed%20By%20%3A-Rishav%20Kumar-red)
 ---
 ## SCREENSHOTS
 ### Home Page
 ![dashboard snap](https://user-images.githubusercontent.com/75771591/157800542-8a1db62c-9d33-460e-ac5a-c007d1ce4dbb.png)
 ### Admin Dashboard Dark theme
-![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/admin_dark.png?raw=true)
+![dashboard snap](https://user-images.githubusercontent.com/75771591/157800621-2a4c9e9a-cda1-49e7-b721-e55f8c6f6b6d.png)
 ### Admin Dashboard Light theme
-![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/admin_light.png?raw=true)
-### Mechanic Dashboard
-![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/mechanic_dashboard.png?raw=true)
-### Customer Dashboard
-![dashboard snap](https://github.com/sumitkumar1503/hospitality/blob/master/static/screenshots/customer_dashboard.png?raw=true)
+![dashboard snap](https://user-images.githubusercontent.com/75771591/157800736-c29af952-451a-4c95-a978-999d37d3d3ad.png)
+### Volunteer Dashboard
+![dashboard snap](https://user-images.githubusercontent.com/75771591/157800800-1add0847-93fb-4a35-b5f9-fac12c9c0c5f.png)
+### Informer Dashboard
+![dashboard snap](https://user-images.githubusercontent.com/75771591/157800867-3fd1f52e-041a-4afe-9274-e4332afa424a.png)
 ---
 ## FUNCTIONS
-## Customer
-- customer will signup and login into system
-- customer can make request for service of their vehicle by providing details (vehicle number, model, problem description etc.)
-- After Request approved by admin, customer can check cost, status of service
-- customer can delete request (Enquiry) if customer change their mind or not approved by admin (ONLY PENDING REQUEST CAN BE DELETED )
-- customer can check status of Request(Enquiry) that is Pending, Approved, Repairing, Repairing Done, Released
-- customer can check invoice details or repaired vehicles
-- customer can send feedback to admin
-- customer can see/edit their profile
+## Informer
+- informer will signup and login into system
+- informer can make request for service of their vehicle by providing details.
+- After Request approved by admin, informer can check budget, status of service
+- informer can delete request (Enquiry) if customer change their mind or not approved by admin (ONLY PENDING REQUEST CAN BE DELETED )
+- informer can check status of Request(Enquiry) that is Pending, Approved, worked-on, Done
+- informer can check invoice details
+- informer can send feedback to admin
+- informer can see/edit their profile
 ---
-## Mechanic
-- mechanic will apply for job by providing details like (skills, address, mobile etc.)
-- Admin will hire(approve) mechanic account based on skill
-- After account approval, mechanic can login into system
-- mechanic can see how many work (vehicles to repair) is assigned to me
-- mechanic can change status of service ('Repairing', 'Repairing Done') according to work progress
-- mechanic can see salary and how many vehicles he/she have repaired so far
-- mechanic can send feedback to admin
-- mechanic can see/edit their profile
+## Volunteer
+- volunteer will apply for job by providing details like (skills, address, mobile etc.)
+- Admin will hire(approve) volunteer account based on skill
+- After account approval, volunteer can login into system
+- volunteer can see how many work (states to work-on) is assigned to me
+- volunteer can change status of service according to work progress
+- volunteer can see salary and how many vehicles he/she have repaired so far
+- volunteer can send feedback to admin
+- volunteer can see/edit their profile
 ---
 ### Admin
 - First admin will login ( for username/password run following command in cmd )
@@ -40,17 +40,16 @@
 py manage.py createsuperuser
 ```
 - Give username, email, password and your admin account will be created.
-- After login , admin can see how many customer, mechanic, recent service orders on dashboard
-- Admin can see/add/update/delete customers
-- Admin can see each customer invoice (if two request made by same customer it will show total sum of both request)
-- Admin can see/add/update/delete mechanics
-- Admin can approve(hire) mechanics (requested by mechanic) based on their skills
-- Admin can see/update mechanic salary
-- Admin can see/update/delete request/enquiry for service sent by customer
+- After login , admin can see how many informer, volunteer, recent service orders on dashboard
+- Admin can see/add/update/delete informers
+- Admin can see each informer invoice (if two request made by same customer it will show total sum of both request)
+- Admin can see/add/update/delete volunteers
+- Admin can approve(hire) volunteers (requested by mechanic) based on their skills
+- Admin can see/update volunteer salary
+- Admin can see/update/delete request/enquiry for service sent by informer
 - Admin can also make request for service (suppose customer directly reached to service center/office)
-- Admin can approve request for service made by customer and assign to mechanic for repairing and will provide cost according to problem description
 - Admin can see all service cost of request (both approved and pending)
-- Admin can see feedbacks sent by customer/mechanic
+- Admin can see feedbacks sent by informer/volunteer
 ---
 ### Other Features
 - we can change theme of website day(white) and night(black)
@@ -76,25 +75,7 @@ py manage.py runserver
 http://127.0.0.1:8000/
 ```
 
-## CHANGES REQUIRED FOR CONTACT US PAGE
-- In settins.py file, You have to give your email and password
-```
-EMAIL_HOST_USER = 'youremail@gmail.com'
-EMAIL_HOST_PASSWORD = 'your email password'
-EMAIL_RECEIVING_USER = 'youremail@gmail.com'
-```
-- Login to gmail through host email id in your browser and open following link and turn it ON
-```
-https://myaccount.google.com/lesssecureapps
-```
-## Drawbacks/LoopHoles
-- When customer/mechanic edit their profile then he/she must login again because their username/password is updated in db.
-## Credits
-- Tran Anh Tuat ( Admin Dashboard UI )
-## Disclaimer
-This project is developed for demo purpose and it's not supposed to be used in real application.
 
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/sumit.luv)
-- [Subscribe my Channel LazyCoder On Youtube](https://youtube.com/lazycoders)
+- [Contact on Linkedin](https://www.linkedin.com/in/rishavkumar-)
